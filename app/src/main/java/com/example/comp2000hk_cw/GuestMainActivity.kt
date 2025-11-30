@@ -1,9 +1,8 @@
 package com.example.comp2000hk_cw
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.activity.ComponentActivity
 
 class GuestMainActivity : ComponentActivity() {
@@ -22,5 +21,35 @@ class GuestMainActivity : ComponentActivity() {
         btnViewReservation = findViewById(R.id.btnViewReservation)
         btnSetting = findViewById(R.id.btnSetting)
         btnLogout = findViewById(R.id.btnLogout)
+
+        btnViewMenu.setOnClickListener {
+            val intent = Intent(this, GuestMenuActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btnReserveNow.setOnClickListener {
+            val intent = Intent(this, GuestReserveActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btnViewReservation.setOnClickListener {
+            val intent = Intent(this, GuestReservationActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btnSetting.setOnClickListener {
+            val intent = Intent(this, GuestSettingActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btnLogout.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
