@@ -25,13 +25,19 @@ class MainActivity : ComponentActivity() {
         tvCreateAccount = findViewById(R.id.tvCreateAccount)
 
         btnLogin.setOnClickListener {
-//            val email = etEmail.text.toString().trim()
+            val email = etEmail.text.toString().trim()
 //            val pwd = etPassword.text.toString().trim()
 //            validate email & pwd
 
-            val intent = Intent(this, GuestMainActivity::class.java)
-            startActivity(intent)
-            finish()
+            if (email == "staff") {
+                val intent = Intent(this, StaffMainActivity::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                val intent = Intent(this, GuestMainActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
 
         tvCreateAccount.setOnClickListener {
