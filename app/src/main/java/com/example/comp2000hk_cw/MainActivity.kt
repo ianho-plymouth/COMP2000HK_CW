@@ -33,5 +33,11 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
             finish()
         }
+
+        tvCreateAccount.setOnClickListener {
+            val intent = Intent(this, GuestCreateAccountActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
