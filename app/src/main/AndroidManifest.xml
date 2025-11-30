@@ -22,6 +22,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".GuestMainActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".GuestMenuActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".GuestReserveActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".GuestReservationActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".GuestSettingActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".GuestCreateAccountActivity" tools:ignore="Instantiatable" />
     </application>
 
 </manifest>
