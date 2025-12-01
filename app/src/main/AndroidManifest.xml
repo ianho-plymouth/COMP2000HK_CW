@@ -24,6 +24,7 @@
         <activity android:name=".GuestMenuActivity" tools:ignore="Instantiatable" />
         <activity android:name=".GuestReserveActivity" tools:ignore="Instantiatable" />
         <activity android:name=".GuestReservationActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".GuestNotificationActivity" tools:ignore="Instantiatable" />
         <activity android:name=".GuestSettingActivity" tools:ignore="Instantiatable" />
         <activity android:name=".GuestCreateAccountActivity" tools:ignore="Instantiatable" />
         <activity android:name=".StaffMainActivity" tools:ignore="Instantiatable" />

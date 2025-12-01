@@ -9,6 +9,7 @@ class GuestMainActivity : ComponentActivity() {
     private lateinit var btnViewMenu: Button
     private lateinit var btnReserveNow: Button
     private lateinit var btnViewReservation: Button
+    private lateinit var btnViewNotification: Button
     private lateinit var btnSetting: Button
     private lateinit var btnLogout: Button
 
@@ -19,6 +20,7 @@ class GuestMainActivity : ComponentActivity() {
         btnViewMenu = findViewById(R.id.btnViewMenu)
         btnReserveNow = findViewById(R.id.btnReserveNow)
         btnViewReservation = findViewById(R.id.btnViewReservation)
+        btnViewNotification = findViewById(R.id.btnViewNotification)
         btnSetting = findViewById(R.id.btnSetting)
         btnLogout = findViewById(R.id.btnLogout)
 
@@ -36,6 +38,12 @@ class GuestMainActivity : ComponentActivity() {
 
         btnViewReservation.setOnClickListener {
             val intent = Intent(this, GuestReservationActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btnViewNotification.setOnClickListener {
+            val intent = Intent(this, GuestNotificationActivity::class.java)
             startActivity(intent)
             finish()
         }

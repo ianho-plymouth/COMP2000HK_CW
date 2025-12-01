@@ -64,6 +64,16 @@
                 android:textColor="@android:color/white" />
 
             <Button
+                android:id="@+id/btnViewNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="#232323"
+                android:text="View Notification"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <Button
                 android:id="@+id/btnSetting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
