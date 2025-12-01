@@ -30,6 +30,7 @@
         <activity android:name=".StaffMainActivity" tools:ignore="Instantiatable" />
         <activity android:name=".StaffMenuActivity" tools:ignore="Instantiatable" />
         <activity android:name=".StaffReservationActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".StaffSettingActivity" tools:ignore="Instantiatable" />
     </application>
 
 </manifest>
