@@ -8,6 +8,7 @@ import androidx.activity.ComponentActivity
 class StaffMainActivity : ComponentActivity() {
     private lateinit var btnEditMenu: Button
     private lateinit var btnViewReservation: Button
+    private lateinit var btnCreateAccount: Button
     private lateinit var btnSetting: Button
     private lateinit var btnLogout: Button
 
@@ -17,6 +18,7 @@ class StaffMainActivity : ComponentActivity() {
 
         btnEditMenu = findViewById(R.id.btnEditMenu)
         btnViewReservation = findViewById(R.id.btnViewReservation)
+        btnCreateAccount = findViewById(R.id.btnCreateAccount)
         btnSetting = findViewById(R.id.btnSetting)
         btnLogout = findViewById(R.id.btnLogout)
 
@@ -28,6 +30,12 @@ class StaffMainActivity : ComponentActivity() {
 
         btnViewReservation.setOnClickListener {
             val intent = Intent(this, StaffReservationActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btnCreateAccount.setOnClickListener {
+            val intent = Intent(this, StaffCreateAccountActivity::class.java)
             startActivity(intent)
             finish()
         }

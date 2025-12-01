@@ -14,7 +14,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.COMP2000HK_CW">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +29,7 @@
         <activity android:name=".StaffMainActivity" tools:ignore="Instantiatable" />
         <activity android:name=".StaffMenuActivity" tools:ignore="Instantiatable" />
         <activity android:name=".StaffReservationActivity" tools:ignore="Instantiatable" />
+        <activity android:name=".StaffCreateAccountActivity" tools:ignore="Instantiatable" />
         <activity android:name=".StaffSettingActivity" tools:ignore="Instantiatable" />
     </application>
 
